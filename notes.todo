@@ -1,0 +1,44 @@
+Kriteria Utama :
+    Fungsionalitas Aplikasi: 
+        ✔ Terdapat cara untuk mendaftar akun. @done()
+        ✔ Terdapat cara untuk login akun. @done()
+        ✔ Menampilkan daftar thread. @done()
+        ✔ Ketika item thread dipilih, menampilkan detail thread beserta komentar di dalamnya. @done()
+        ✔ Pengguna dapat membuat thread. @done()
+        ✔ Pengguna dapat membuat komentar di dalam sebuah thread. @done()
+        ✔ Menampilkan Loading bar ketika memuat data dari API. @done()
+        Notes :
+            ✔ List threads boleh tanpa login, tetapi untuk action create atau komentar wajib terauthentikasi @done()
+            Item threads harus menampilkan : 
+                ✔ judul, @done()
+                ✔ potongan body, @done()
+                ✔ waktu created, @done()
+                ✔ jumlah komentar, @done()
+                ✘ pembuat (nama, avatar) @cancelled(Tidak ada datanya)
+            Detail threads : 
+                ✔ meampilkan : @done()
+                    ✔ judul, @done()
+                    ✔ body, @done()
+                    ✔ waktu created, @done()
+                    ✔ pembuat ( nama, avatar) @done()
+                ✔ Komentar meampilkan : komentar, waktu created, pembuat ( nama, avatar ) @done()
+    Bugs Highlighting :
+        ✔ Menggunakan ESLint @done()
+        ✔ Menerapkan salah satu code convention airbnb/google/standarjs @done()
+        ✔ Tidak indikasi ada error dari ESLint @done()
+        ✔ Pakai react strict mode @done()
+    Arsitektur Aplikasi :
+        ✔ State2 yang berhubungan dengan API, di simpan di redux store, keccuali form input dan controller boleh di per component @done()
+        ✔ Tidak ada pemanggilan API di lifecycle @done()
+        ✔ Memisahkan ui dan state di folder yang berbeda @done()
+        ✔ React component bersifat modular dan reusable @done()
+Saran/opsional :
+    Fitur Votes pada Thread dan Komentar:
+        ☐ Ada button vote di thread/komentar
+        ☐ Ada perubahan ui, ketika user klik vote
+        ☐ Optimistically Apply Actions?
+        ☐ Menampilkan jumlah vote di thread/komentar
+    Menampilkan Leaderboard:
+        ✔ Ada halaman leaderboard, yang menampilkan nama pengguna, avatar, score @done()
+    Filter Daftar Thread Berdasarkan Kategori:
+        ☐ Filter thread di list threads by kategori ( by frontend aja, api tidak ada)

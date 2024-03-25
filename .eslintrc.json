@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": "airbnb",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-trailing-spaces": "off",
+        "indent": "off",
+        "object-curly-spacing": "off",
+        "no-console": "off", // Memperbolehkan penggunaan console.log(), console.error(), dll.
+        "no-alert": "off",
+        "react/react-in-jsx-scope": "off",
+        "import/no-extraneous-dependencies": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "linebreak-style": "off",
+        "react/button-has-type": "off",
+        "max-len": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "react/require-default-props": "off"
+    }
+}

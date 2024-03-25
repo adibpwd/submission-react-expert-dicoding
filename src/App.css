@@ -1,0 +1,269 @@
+/* styles.css */
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.loading {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.right-section {
+  list-style: none;
+  display: flex;
+}
+
+.right-section li {
+  margin-left: 20px;
+}
+
+.right-section li:first-child {
+  margin-left: 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+#dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#dropdownContent a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#dropdownContent a:hover {
+  background-color: #555;
+}
+
+#userStatus:hover #dropdownContent {
+  display: block;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.auth-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container label {
+  margin-bottom: 8px;
+}
+
+.auth-container input[type="email"],
+.auth-container input[type="password"],
+.auth-container input[type="text"],
+.auth-container button[type="submit"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.auth-container button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.auth-container p {
+  text-align: center;
+}
+
+.auth-container p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-container p a:hover {
+  text-decoration: underline;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Card Styles */
+.thread-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: calc(33.33% - 20px); /* Untuk membuat 3 kartu per baris */
+}
+
+.thread-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.thread-card-category {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.thread-card-body {
+  margin-bottom: 10px;
+}
+
+.thread-card-date {
+  color: #999;
+  font-size: 14px;
+}
+
+.create-thread-form input,
+.create-thread-form textarea {
+  width: 100%;
+}
+
+.leaderboard-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: calc(33.33% - 20px); /* Untuk membuat 3 kartu per baris */
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.leaderboard-user-info {
+  margin-bottom: 10px;
+}
+
+.leaderboard-user-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.leaderboard-user-email {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.leaderboard-user-score {
+  font-size: 16px;
+  color: #007bff;
+}
+.loader-container {
+  width: 100%;
+  height: 12px;
+  position: relative;
+  background-color: #f3f3f3;
+  overflow: hidden;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #3498db;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  animation: progress 2s linear infinite;
+}
+
+@keyframes progress {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}

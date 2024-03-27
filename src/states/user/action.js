@@ -5,9 +5,6 @@ const ActionType = {
 };
 
 function receiveUsers(users) {
-  // console.log("hmm");
-  // console.log(users);
-  // console.log("hmm");
     return {
       type: ActionType.RECEIVE_USERS,
       payload: {

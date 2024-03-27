@@ -18,8 +18,6 @@ jobs:
     - name: npm install
       run: npm install --legacy-peer-deps
     - name: npm test
-      run: |
-          export CHROME_BIN=/usr/bin/chromium-browser
-          CI=true npm run test-headless
-        env:
-          CI: true
+      run: CI=true npm run test-headless
+      env:
+        CI: true

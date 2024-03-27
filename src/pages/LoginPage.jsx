@@ -23,7 +23,7 @@ const onLogin = ({ email, password }) => {
 
   return (
     <div className="auth-container">
-      <h1>Login Page</h1>
+      <h1>Login Page 1</h1>
       <LoginInput login={onLogin} />
       <p>Belum punya akun? <Link to="/register">Daftar sekarang</Link>.</p>
     </div>

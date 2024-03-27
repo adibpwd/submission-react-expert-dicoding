@@ -31,7 +31,7 @@ describe('LoginInput component', () => {
         await userEvent.type(emailInput, 'adibtambak8@gmail.com');
 
         // Assert
-        expect(emailInput).toHaveValue('adibtambak8@gmail.com');
+        expect(emailInput).toHaveValue('adibtambak8@gmail.com1');
     });
 
     it('should handle password typing correctly', async () => {

@@ -7,14 +7,14 @@ Kriteria Utama:
         ✔ Wajib menulis skenario pengujian pada masing-masing berkas pengujian. @done()
         ✔ Pengujian dapat dijalankan dengan perintah npm test dan npm run e2e @done(yarn test)
     Deployment Aplikasi:
-        ☐ Deploy dengan CI/CD
+        ✔ Deploy dengan CI/CD @done()
         ✔ CI dengan github action @done()
         ✔ CD dengan vercel @done()
         ✔ Memproteksi branch main @done()
         ☐ Melampirkan URL Vercel aplikasi Anda pada catatan submission.
         Melampirkan screenshoot, bukti telah menerapkan CI/CD/proteksi master (taruh di folder screenshoot):
             ✔ 1_ci_check_error: menunjukkan CI check error karena pengujian gagal @done()
-            ☐ 2_ci_check_pass: menunjukkan CI check pass karena pengujian lolos
+            ✔ 2_ci_check_pass: menunjukkan CI check pass karena pengujian lolos @done()
             ✔ 3_branch_protection: menunjukkan branch proteksi pada halaman PR @done()
     Memanfaatkan Salah Satu Ecosystem React:
         ☐ Memanfaatkan minimal satu React Ecosystem

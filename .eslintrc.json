@@ -20,6 +20,7 @@
         "indent": "off",
         "object-curly-spacing": "off",
         "no-console": "off",
+        "no-self-assign": "off",
         "no-alert": "off",
         "react/react-in-jsx-scope": "off",
         "import/no-extraneous-dependencies": "off",

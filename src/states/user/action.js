@@ -5,9 +5,6 @@ const ActionType = {
 };
 
 function receiveUsers(users) {
-  // console.log("hmm");
-  // console.log(users);
-  // console.log("hmm");
     return {
       type: ActionType.RECEIVE_USERS,
       payload: {
@@ -23,6 +20,7 @@ function asyncGetListUsers() {
    
         dispatch(receiveUsers(users));
       } catch (error) {
+        dispatch({ type: 'RECEIVE_USERS_ERROR', payload: error.message });
         // alert(error.message);
       }
     };

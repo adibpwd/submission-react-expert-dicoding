@@ -37,7 +37,7 @@ function HomePage() {
       <br />
       <hr />
       <br />
-      <h2>List Thread</h2>
+      <h2>List Thread 1</h2>
       <div className="card-list">
         {threads.map((thread) => <ThreadCard key={thread.id} thread={thread} user={users.find((user) => user.id === thread.ownerId)} />)}
       </div>

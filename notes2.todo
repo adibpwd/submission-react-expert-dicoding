@@ -13,8 +13,8 @@ Kriteria Utama:
         ✔ Memproteksi branch main @done()
         ☐ Melampirkan URL Vercel aplikasi Anda pada catatan submission.
         Melampirkan screenshoot, bukti telah menerapkan CI/CD/proteksi master (taruh di folder screenshoot):
-            ☐ 1_ci_check_error: menunjukkan CI check error karena pengujian gagal
+            ✔ 1_ci_check_error: menunjukkan CI check error karena pengujian gagal @done()
             ☐ 2_ci_check_pass: menunjukkan CI check pass karena pengujian lolos
-            ☐ 3_branch_protection: menunjukkan branch proteksi pada halaman PR
+            ✔ 3_branch_protection: menunjukkan branch proteksi pada halaman PR @done()
     Memanfaatkan Salah Satu Ecosystem React:
         ☐ Memanfaatkan minimal satu React Ecosystem

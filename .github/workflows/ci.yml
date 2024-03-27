@@ -18,4 +18,4 @@ jobs:
       - name: npm install and test
         run: |
           npm install --legacy-peer-deps
-          npm run ci:test
+          CI=true npm run ci:test

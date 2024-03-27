@@ -2,6 +2,16 @@ import { describe, it, expect } from 'vitest';
 import userReducer from './reducer';
 import { ActionType } from './action';
 
+/**
+ * Skenario Test:
+ *
+ * - Set User Action
+ *   Deskripsi: Skenario ini menguji apakah reducer dapat menangani aksi SETUSER dengan benar.
+ *   
+ * - Unknown Action Type
+ *   Deskripsi: Skenario ini menguji apakah reducer mengembalikan state saat ini jika tipe aksi tidak dikenali.
+ */
+
 describe('userReducer', () => {
   it('should return the initial state', () => {
     expect(userReducer(undefined, {})).toEqual([]);

@@ -2,8 +2,14 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "node": true
+        "node": true,
+        "cypress/globals": true
     },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "cypress"
+    ],
     "extends": "airbnb",
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -13,7 +19,7 @@
         "no-trailing-spaces": "off",
         "indent": "off",
         "object-curly-spacing": "off",
-        "no-console": "off", // Memperbolehkan penggunaan console.log(), console.error(), dll.
+        "no-console": "off",
         "no-alert": "off",
         "react/react-in-jsx-scope": "off",
         "import/no-extraneous-dependencies": "off",

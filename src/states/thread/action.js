@@ -2,9 +2,10 @@ import api from '../../utils/api';
 
 const ActionType = {
     RECEIVE_THREADS: 'RECEIVE_THREADS',
+    GET_THREADS_ERROR: 'GET_THREADS_ERROR',
 };
 
-function receiveTalksActionCreator(threads) {
+function receiveThreadsActionCreator(threads) {
     return {
       type: ActionType.RECEIVE_THREADS,
       payload: {
@@ -18,9 +19,9 @@ function asyncGetListThreads() {
       try {
         const threads = await api.getAllThreads();
    
-        dispatch(receiveTalksActionCreator(threads));
+        dispatch(receiveThreadsActionCreator(threads));
       } catch (error) {
-        alert(error.message);
+        dispatch({ type: ActionType.GET_THREADS_ERROR, payload: error.message });
       }
     };
 }
@@ -31,14 +32,14 @@ function createThread({ title, body, category }) {
         await api.createThread({title, body, category});
         dispatch(asyncGetListThreads());
       } catch (error) {
-        alert(error.message);
+        dispatch({ type: ActionType.CREATE_THREAD_ERROR, payload: error.message });
       }
     };
 }
 
 export {
     ActionType,
-    receiveTalksActionCreator,
+    receiveThreadsActionCreator,
     asyncGetListThreads,
     createThread,
 };

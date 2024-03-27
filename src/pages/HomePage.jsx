@@ -2,8 +2,6 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { createThread } from '../states/thread/action';
 import asyncUserAndThreads from '../states/shared/action';
-// import { asyncGetListThreads, createThread } from '../states/thread/action';
-// import { asyncGetListUsers} from '../states/user/action';
 import { setIsLoading } from '../states/isPreload/action';
 import ThreadForm from '../components/ThreadForm';
 import ThreadCard from '../components/ThreadCard';

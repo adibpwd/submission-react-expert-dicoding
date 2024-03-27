@@ -40,7 +40,7 @@ function asyncRegister({ name, email, password }) {
       const user = await api.register({ name, email, password });
       dispatch(setUser(user));
     } catch (error) {
-      alert(error.message);
+      dispatch({ type: 'REGISTER_ERROR', payload: error.message });
     }
   };
 }
